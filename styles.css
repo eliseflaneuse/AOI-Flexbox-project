@@ -1,0 +1,394 @@
+/* 
+1. Global Styles
+2. Header Styles 
+3. Navigation Styles
+4. Mission Styles
+6. Illustration Styles (Products)
+7. Team Styles 
+8. Footer Styles 
+ Media Queries
+
+ ===============================================*/
+
+/* 1. Global Styles 
+===============================================*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    background-color: #f1f2f0;
+    scroll-behavior: smooth;
+
+
+}
+body {
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #f4382d;
+    background-color: #f1f2f0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.main {
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.border {
+    border: 1px solid #051ce6;
+    min-width: 300px;
+}
+
+/* 2. Header Styles 
+===============================================*/
+
+.header {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #051ce6;
+}
+
+.header img {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-shrink: 1;
+    margin-top: 1rem;
+    
+}
+
+.logo {
+    object-fit: cover;
+
+}
+
+h1 {
+    margin: 0 auto;
+}
+
+/* 3. Navigation Styles
+===============================================*/
+
+.navbar {
+    display: flex;
+    letter-spacing: 0.2rem;
+    margin: 0;
+    text-transform: uppercase;
+    
+}
+
+.navbar a {
+    text-decoration: none;
+    color:#051ce6;
+
+}
+
+.food {
+    border: 1px solid #051ce6;
+    margin: 0.1rem;
+    width: 33.3%;
+    min-width: 125px;
+}
+
+.menu {
+    border: 1px solid #051ce6;
+    margin: 0.1rem;
+    width: 33.3%;
+    
+}
+
+.team {
+    border: 1px solid #051ce6;
+    margin: 0.1rem;
+    width: 33.3%;
+}
+
+/* 4. Mission Styles
+===============================================*/
+
+.mission {
+    display: flex;
+    letter-spacing: 0.2rem;
+    margin: 0;
+    text-transform: uppercase;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.restaurant {
+    border: 1px solid #051ce6;
+    margin: 0.1rem;
+    width: 50%;
+
+}
+
+.content {
+    border: 1px solid #051ce6;
+    margin: 0.1rem;
+    width: 50%;
+    align-items: center;
+
+}
+
+/* */
+ 
+.container {
+    height: 350px;
+    display: flex;
+    align-items: stretch;
+    font-size: 2.5rem;
+    
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-shrink: 1;
+}
+
+ .left p {
+    margin: auto;
+    font-weight: bold;
+    color: #051ce6;
+ }
+
+
+.right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 25px;
+    flex-shrink: 2;
+}
+
+.container p:not(.quote) {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    letter-spacing: 0.2rem;
+}
+
+.dots {
+    height: 1.25rem;
+    width: 1.25rem;
+    background-color: #f4382d;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.dotl {
+    height: 7.5rem;
+    width: 7.5rem;
+    background-color: #f4382d;
+    border-radius: 50%;
+    display: inline-block;
+
+  }
+
+blockquote {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    max-width: 25rem;
+}
+
+blockquote p {
+    padding: 25px 10px 10px 10px;
+}
+
+/* 5. Menu Styles (Products)
+===============================================*/
+
+.menu-ramen,.menu-onigiri {
+    display: flex;
+    letter-spacing: 0.2rem;
+    margin: 0;
+    text-transform: uppercase;
+    
+}
+
+.ramen, .onigiri {
+    border: 1px solid #051ce6;
+    margin: 0.1rem;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.ramen h3, .onigiri h3 {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: 0.2rem;
+    width: 40%;
+    border-right: 1px solid #f4382d;
+    margin: 1.25rem;
+    padding-left: 30px;
+
+}
+
+.ramen h4, .onigiri h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.ramen p, .onigiri p {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 1rem;
+    text-transform: lowercase;
+    flex-shrink: 1;
+    
+}
+
+.types {
+    padding: 3rem 3rem 3rem 1rem;
+    text-align: center;
+}
+
+/* 6. Illustration Styles (Products)
+===============================================*/
+
+.ramen-img {
+    border: 1px solid #051ce6;
+    margin: 0.1rem;
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-image: url("images/ramen.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: content-box;
+    background-position: center;
+    flex-shrink: 2;
+    
+}
+
+.onigiri-img {
+    border: 1px solid #051ce6;
+    margin: 0.1rem;
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-image: url("images/onigiri.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: content-box;
+    background-position: center;
+    flex-shrink: 2;
+
+}
+
+/* 7. Team Styles 
+===============================================*/
+.team-container {
+    letter-spacing: 0.2rem;
+    margin: 0.1rem;
+    text-transform: uppercase;
+    border: 1px solid #051ce6;
+}
+
+.team-container h4 {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px;
+ 
+}
+.ourteam {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+
+.teammate img {
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    margin: 20px;
+    
+}
+
+.teammate p {
+    font-size: 16px;
+    text-transform: lowercase;
+    margin-bottom: 20px;
+}
+
+/* 8. Footer Styles 
+===============================================*/
+
+.contact {
+    letter-spacing: 0.2rem;
+    margin: 0.2rem;
+    border: 1px solid #051ce6;
+    padding: 30px;
+}
+
+.footer h5 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.special {
+    text-decoration: none;
+    color:#051ce6; 
+    transition: background-color .25s ease-in;
+    -webkit-transition: background-color .25s ease-in;
+}
+
+
+.special:active{
+    color: #f4382d;
+    font-style: italic;
+    transition: background-color .25s ease-out;
+    -webkit-transition: background-color .25s ease-out;
+}
+
+
+
+/* Media Queries
+ ===============================================*/
+
+ @media only screen and (max-width: 445px) {
+    .dotl {
+      position: absolute;
+      height: 120px;
+      width: 120px;
+    }
+
+    blockquote {
+        padding-top: 100px;
+    }
+
+  }
+
+  @media only screen and (max-width: 768px) {
+    .ramen p, .onigiri p {
+        display: none;
+
+    }
+    .ramen h4, .onigiri h4 {
+        font-size: 16px;
+        margin: auto;
+        padding: 10px;
+    }
+
+
+  }
